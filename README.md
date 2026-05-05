@@ -1,13 +1,13 @@
-🚦 Autonomous Smart Traffic System
+ Autonomous Smart Traffic System
 
 An AI-powered smart city traffic control system that monitors real-time traffic data, predicts congestion, dynamically adjusts signal timings, detects accidents, and recommends the least congested route — all from one live dashboard.
 
 
-🧠 Problem Statement
+ Problem Statement
 Urban traffic congestion costs cities billions of dollars every year in lost productivity, fuel waste, and emergency response delays. Traditional traffic signals operate on fixed timers — completely blind to actual traffic conditions. There is no real-time intelligence, no accident awareness, and no dynamic routing.
 We built a system that changes that.
 
-💡 Our Solution
+ Our Solution
 The Autonomous Smart Traffic System simulates a network of smart city sensors and uses AI to:
 
 Predict congestion levels before they become critical
@@ -17,10 +17,10 @@ Recommend the safest and least congested route for drivers
 Visualize everything on a live, auto-refreshing control dashboard
 
 
-⚙️ Features
-FeatureDescription🔴 Real-Time Data SimulationSimulates IoT sensor data from 6 city intersections🤖 Congestion PredictionML model classifies congestion as Low / Medium / High🚦 Smart Signal ControlGreen light timing adjusts dynamically based on congestion⚠️ Accident DetectionFlags dangerous intersections using speed, volume and risk score🗺️ Route OptimizationScores all routes and recommends the least congested path📊 Live DashboardAuto-refreshing Streamlit dashboard with charts and alerts
+ Features
+FeatureDescription Real-Time Data SimulationSimulates IoT sensor data from 6 city intersections🤖 Congestion PredictionML model classifies congestion as Low / Medium / High🚦 Smart Signal ControlGreen light timing adjusts dynamically based on congestion Accident DetectionFlags dangerous intersections using speed, volume and risk score🗺️ Route OptimizationScores all routes and recommends the least congested path📊 Live DashboardAuto-refreshing Streamlit dashboard with charts and alerts
 
-🛠️ Tech Stack
+ Tech Stack
 
 Python — Core logic and data processing
 Streamlit — Interactive live dashboard
@@ -29,7 +29,7 @@ Plotly — Interactive charts and visualizations
 Scikit-learn — Random Forest model for congestion prediction
 
 
-📁 Folder Structure
+ Folder Structure
 smart_traffic_system/
 │
 ├── app.py                      # Main Streamlit dashboard (entry point)
@@ -51,7 +51,7 @@ smart_traffic_system/
 ├── requirements.txt            # All Python dependencies
 └── README.md                   # Project documentation
 
-🚀 How to Run
+ How to Run
 1. Clone the repository
 bashgit clone https://github.com/Newt186/smart_traffic_system.git
 cd smart_traffic_system
@@ -61,7 +61,7 @@ bashpip install -r requirements.txt
 bashstreamlit run app.py
 The dashboard will open automatically in your browser at http://localhost:8501
 
-📊 Dashboard Preview
+ Dashboard Preview
 The dashboard includes:
 
 Metric Cards — Total vehicles, average speed, active accidents, best route
@@ -72,7 +72,7 @@ Signal Timing Chart — Visual of green light durations per junction
 Auto Refresh — Simulates live sensor updates every 5 seconds
 
 
-🤖 How the AI Works
+ How the AI Works
 Congestion Prediction
 
 Model: Random Forest Classifier
@@ -106,22 +106,22 @@ Low congestion → 30 seconds green light
 Accident detected → 120 seconds + Emergency Override
 
 
-👥 Team
-MemberRole[Your Name]AI Logic — Data simulation, congestion model, accident detection, route optimizer[Friend's Name]Dashboard & UI — Signal controller, Streamlit dashboard, README, presentation
+ Team
+MemberRole[Soham Mulay]AI Logic — Data simulation, congestion model, accident detection, route optimizer[Sharwil Aher]Dashboard & UI — Signal controller, Streamlit dashboard, README, presentation
 
-🔮 Future Scope
+ Future Scope
 
-🌐 Connect to real IoT traffic sensors via MQTT or REST API
-🗺️ Integrate Google Maps or HERE Maps for live GPS routing
-🌧️ Add weather data — rain and fog increase accident risk scores
-📱 Build a mobile alert system to notify drivers in real time
-🧠 Use Reinforcement Learning to optimize signal timing over time
-☁️ Deploy on AWS or GCP for 24/7 city-wide operation
-👁️ Add computer vision (YOLO) for camera-based vehicle counting
-🕸️ Expand to full city road graph using NetworkX for routing
+ Connect to real IoT traffic sensors via MQTT or REST API
+ Integrate Google Maps or HERE Maps for live GPS routing
+ Add weather data — rain and fog increase accident risk scores
+ Build a mobile alert system to notify drivers in real time
+ Use Reinforcement Learning to optimize signal timing over time
+ Deploy on AWS or GCP for 24/7 city-wide operation
+ Add computer vision (YOLO) for camera-based vehicle counting
+ Expand to full city road graph using NetworkX for routing
 
 
-📦 Requirements
+ Requirements
 streamlit
 pandas
 numpy
@@ -130,7 +130,7 @@ scikit-learn
 Install all with:
 bashpip install -r requirements.txt
 
-📄 License
+ License
 This project was built for educational and hackathon purposes.
 
 
