@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import random 
 import datetime 
-from data_simulator import generate_traffic_data
+from modules.data_simulator import generate_traffic_data
 from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
 

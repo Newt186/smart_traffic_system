@@ -1,8 +1,8 @@
 import pandas as pd
-from accident_detector import detect_accident 
+from modules.accident_detector import detect_accident 
 import datetime 
-from congestion_model import label_congestion, predict_congestion
-from data_simulator import generate_traffic_data
+from modules.congestion_model import label_congestion, predict_congestion
+from modules.data_simulator import generate_traffic_data
 
 
 def calculate_signal_timing(df):
