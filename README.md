@@ -56,7 +56,7 @@ The Autonomous Smart Traffic System simulates a network of smart traffic sensors
 
 ## Project Structure
 
-
+---
 smart_traffic_system/
 │
 ├── app/
@@ -81,7 +81,7 @@ smart_traffic_system/
 ├── main.py
 ├── requirements.txt
 └── README.md
-
+---
 
 ---
 
