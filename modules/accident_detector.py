@@ -2,7 +2,7 @@
 import numpy as np #for safety imports 
 import pandas as pd 
 from data_simulator import generate_traffic_data
-from congestion_model import label_congestion, predict_congestion
+
 import datetime
 
 def detect_accident(df):
