@@ -1,22 +1,3 @@
-"""YOUR STEP 3 — accident_detector.py
-----------------------------------------------------------------
-PURPOSE:
-Scan each intersection and flag it if there's a possible accident.
-Uses a combination of low speed + high vehicle count + high risk score.
-
-WHAT TO BUILD:
-One function: detect_accidents(df)
-
-LOGIC TO IMPLEMENT:
-For each row, check this condition:
-    IF avg_speed_kmph < 15
-    AND vehicle_count > 100
-    AND accident_risk_score > 0.7
-    THEN → mark as possible accident
-
-Add two new columns:
-    - accident_flag    → True or False
-    - alert_message   → "⚠️ Possible Accident Detected" or "Clear" """
 
 import numpy as np #for safety imports 
 import pandas as pd 
