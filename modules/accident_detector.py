@@ -4,6 +4,7 @@ import pandas as pd
 from data_simulator import generate_traffic_data
 
 
+
 def detect_accident(df):
 
     accident_flags = []
