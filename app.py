@@ -70,21 +70,21 @@ df = calculate_signal_timing(df)
 
 route_result = recommend_route(df)
 
-st.subheader("📊 Live Traffic Overview")
+st.subheader(" Live Traffic Overview")
 
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
     total_vehicles = int(df["Vehicle_count"].sum())
-    st.metric("🚗 Total Vehicles", total_vehicles)
+    st.metric(" Total Vehicles", total_vehicles)
 
 with col2:
     avg_speed = round(df["avg_speed_kmph"].mean(), 1)
-    st.metric("💨 Avg Speed (km/h)", avg_speed)
+    st.metric(" Avg Speed (km/h)", avg_speed)
 
 with col3:
     active_accidents = int(df["accident_flag"].sum())
-    st.metric("⚠️ Active Accidents", active_accidents)
+    st.metric(" Active Accidents", active_accidents)
 
 with col4:
     best_route = route_result[
@@ -93,11 +93,11 @@ with col4:
 
     best_route_name = best_route[0] if len(best_route) > 0 else "N/A"
 
-    st.metric("🗺️ Best Route", best_route_name)
+    st.metric(" Best Route", best_route_name)
 
 st.markdown("---")
 
-st.subheader("📈 Live Congestion Monitor")
+st.subheader(" Live Congestion Monitor")
 
 color_map = {
     "Low": "#2ecc71",
@@ -123,7 +123,7 @@ st.plotly_chart(congestion_chart, use_container_width=True)
 
 st.markdown("---")
 
-st.subheader("🚨 Accident Detection Alerts")
+st.subheader(" Accident Detection Alerts")
 
 accident_df = df[df["accident_flag"] == True]
 
@@ -134,7 +134,7 @@ if len(accident_df) > 0:
         st.markdown(
             f"""
             <div class='accident-alert'>
-                ⚠️ ALERT: {row['location']} —
+                ALERT: {row['location']} —
                 {row['alert_message']}
                 | Risk Score: {row['accident_risk_score']}
             </div>
@@ -145,11 +145,11 @@ if len(accident_df) > 0:
         st.write("")
 
 else:
-    st.success("✅ No accidents detected.")
+    st.success(" No accidents detected.")
 
 st.markdown("---")
 
-st.subheader("🗺️ Route Recommendation")
+st.subheader(" Route Recommendation")
 
 col_left, col_right = st.columns([1, 2])
 
@@ -196,7 +196,7 @@ with col_right:
 
 st.markdown("---")
 
-st.subheader("🔍 Intersection Control Table")
+st.subheader(" Intersection Control Table")
 
 display_columns = [
     "location",
@@ -251,14 +251,14 @@ st.plotly_chart(signal_chart, use_container_width=True)
 
 st.markdown("---")
 
-st.subheader("🔄 Auto Refresh")
+st.subheader(" Auto Refresh")
 
 auto_refresh = st.checkbox(
     "Enable Auto Refresh (every 5 seconds)"
 )
 
 if auto_refresh:
-    st.info("🔄 Refreshing dashboard...")
+    st.info(" Refreshing dashboard...")
     time.sleep(5)
     st.rerun()
 
