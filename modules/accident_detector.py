@@ -3,7 +3,6 @@ import numpy as np #for safety imports
 import pandas as pd 
 from data_simulator import generate_traffic_data
 
-import datetime
 
 def detect_accident(df):
 
